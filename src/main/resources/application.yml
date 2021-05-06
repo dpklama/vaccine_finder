@@ -1,0 +1,21 @@
+searchcriteria:
+  districts:
+    Nagpur:
+      agelimit: 18
+      pincodes:
+        - 440001
+      mailinglist:
+        - abc@gmail.com
+        - abc@gmail.com
+        - abc@gmail.com
+      cclist:
+        - abc@gmail.com
+    Pune:
+      agelimit: 45
+      pincodes:
+        - 440001
+        - 440002
+      mailinglist:
+        - abc@gmail.com
+      cclist:
+        - abc@gmail.com
