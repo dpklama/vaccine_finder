@@ -4,7 +4,7 @@ Service to notify when vaccination slots are available
 1. Finds vaccination centers by pincode
 2. Sends a notification mail with details of avaliable slots in vaccination centers
 
-# Steps
+# steps
 Its a Spring Boot app.
 1. Update the scheduler interval and mail configs in application.properties
 2. Update the search criteria in application.yml
