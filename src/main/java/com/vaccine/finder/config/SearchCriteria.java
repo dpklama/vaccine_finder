@@ -23,16 +23,16 @@ public class SearchCriteria {
     }
 
     public static class District {
-        private int agelimit;
+        private List<Integer> agelimit;
         private List<String> pincodes;
         private List<String> mailinglist;
         private List<String> cclist;
 
-        public int getAgelimit() {
+        public List<Integer> getAgelimit() {
             return agelimit;
         }
 
-        public void setAgelimit(int agelimit) {
+        public void setAgelimit(List<Integer> agelimit) {
             this.agelimit = agelimit;
         }
 

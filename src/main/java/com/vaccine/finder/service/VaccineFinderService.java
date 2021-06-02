@@ -55,7 +55,7 @@ public class VaccineFinderService {
                     if (response != null) {
                         // remove slots with 0 capacity and not in age limit
                         response.getCenters().forEach(center -> {
-                            center.getSessions().removeIf(next -> next.getAvailable_capacity() == 0 || next.getMin_age_limit() != district.getAgelimit());
+                            center.getSessions().removeIf(next -> next.getAvailable_capacity() == 0 || !district.getAgelimit().contains(next.getMin_age_limit()));
                         });
                         //remove center with 0 slots
                         response.getCenters().removeIf(center -> center.getSessions().isEmpty());
@@ -69,7 +69,7 @@ public class VaccineFinderService {
                     if (response != null) {
                         // remove slots with 0 capacity and not in age limit
                         response.getCenters().forEach(center -> {
-                            center.getSessions().removeIf(next -> next.getAvailable_capacity() == 0 || next.getMin_age_limit() != district.getAgelimit());
+                            center.getSessions().removeIf(next -> next.getAvailable_capacity() == 0 || !district.getAgelimit().contains(next.getMin_age_limit()));
                         });
                         //remove center with 0 slots
                         response.getCenters().removeIf(center -> center.getSessions().isEmpty());
